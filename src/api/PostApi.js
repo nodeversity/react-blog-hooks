@@ -12,17 +12,22 @@ class PostApi {
         return Axios.get(`posts&_limit=25`);
     }
     
-    static getPost(post_id){
-        return Axios.get(`posts/${post_id}`);
+    static getPost(postId){
+        return Axios.get(`posts/${postId}`);
     }
 
-    static updatePost(post_id, updated_post){
-        return Axios.put(`posts/${post_id}`, updated_post);
+    static updatePost(postId, updated_post){
+        return Axios.put(`posts/${postId}`, updated_post);
     }
 
-    deletePost(post_id){
-        return Axios.delete(`posts/${post_id}`);
+    static deletePost(postId){
+        return Axios.delete(`posts/${postId}`);
     }
+
+    static newPost(newPostObj){
+        return Axios.post(`posts/`, newPostObj);
+    }
+
 
 }
 
