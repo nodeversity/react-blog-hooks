@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CommentDetail from './/CommentDetail'
 
 const PostCommentList = () => {
     const [post, setPost] = useState('');
@@ -8,6 +9,7 @@ const PostCommentList = () => {
     return (
         <div>
             List of comments referencing this blog post.
+            <CommentDetail />
         </div>
     )
 }
