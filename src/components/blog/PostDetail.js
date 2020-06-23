@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PostCommentList from './PostCommentList';
 
 
 const PostDetail = (props) => {
     const [post, setPost] = useState('');
+
+    const updatePost = () => {
+        /** Update this Post's attributes */
+    }
+
+    useEffect(() => {
+        
+    }, [])
 
     return(
         <>
