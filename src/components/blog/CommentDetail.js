@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const CommentDetail = () => {
+const CommentDetail = ({ comment }) => {
     return(
         <div>
             Comment Detail

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PostCommentList from './PostCommentList';
 
 
-const PostDetail = () => {
+const PostDetail = (props) => {
     const [post, setPost] = useState('');
 
     return(

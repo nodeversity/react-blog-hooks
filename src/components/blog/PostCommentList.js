@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CommentDetail from './/CommentDetail'
 
-const PostCommentList = () => {
+const PostCommentList = ({post, comments}) => {
     const [post, setPost] = useState('');
     const [comments, setComments] = useState([]);
 

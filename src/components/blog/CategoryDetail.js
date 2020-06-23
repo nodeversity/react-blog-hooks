@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PostDetail from './PostDetail';
 
 
-const CategoryDetail = () => {
+const CategoryDetail = (props) => {
     const [category, setCategory] = useState('');
     const [posts, setPosts] = useState([]);
 
