@@ -23,3 +23,5 @@ class CommentApi {
          return Axios.post(`comments/`, newCommentObj);
      }
 }
+
+export default CommentApi;
