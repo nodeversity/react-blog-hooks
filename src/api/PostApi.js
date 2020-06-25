@@ -9,7 +9,7 @@ class PostApi {
     */
 
     static getAllPosts(){
-        return Axios.get(`posts&_limit=25`);
+        return Axios.get(`posts/?_limit=25`);
     }
     
     static getPost(postId){
