@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PostCommentList from './PostCommentList';
 import PostApi from '../../api/PostApi'
+import CommentApi from '../../api/CommentApi'
 
 
 const PostDetail = (props) => {
@@ -37,8 +38,8 @@ const PostDetail = (props) => {
                 { post.body }
             </p>
             <div>
-                <h4> Comments posted</h4>
-                <PostCommentList post={post} />
+    <h4> Comments posted: {comments.length} </h4>
+                <PostCommentList post={post} postUrl={postUrl} />
             </div>
         </>
     )
