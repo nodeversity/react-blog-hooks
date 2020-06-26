@@ -3,7 +3,13 @@ import React, { useState } from 'react';
 const CommentDetail = ({ comment }) => {
     return(
         <div>
-            Comment Detail
+            <h5>
+                <i> {comment.email} says: </i>
+            </h5>
+            <h3> {comment.name}</h3>
+            <p>
+                {comment.body}
+            </p>
         </div>
     )
 }

@@ -8,7 +8,8 @@ const PostCommentList = ({ postUrl }) => {
     const getCommentsForPost = () => {
         CommentApi.getCommentsForPost(postUrl)
             .then(response => {
-                setComments(response.data)
+                setComments(response.data);
+                console.log(`Comments for Post: ${comments}`)
             })
             .catch(err => console.log(`Comments API Error: ${err}`))
             .finally(() => {})
@@ -16,14 +17,14 @@ const PostCommentList = ({ postUrl }) => {
     }
 
     useEffect(() => {
-
-    }, [comments])
+        getCommentsForPost();
+    }, [comments,])
 
     return (
         <div>
             List of comments referencing this blog post.
             {comments.map(comment => (
-                <CommentDetail comment={comment} />
+                <CommentDetail key={comment.id} comment={comment} />
             ))}
         </div>
     )
