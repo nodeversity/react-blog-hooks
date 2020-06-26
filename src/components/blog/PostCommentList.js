@@ -18,7 +18,7 @@ const PostCommentList = ({ postUrl }) => {
 
     useEffect(() => {
         getCommentsForPost();
-    }, [comments,])
+    }, [comments.length,])
 
     return (
         <div>
