@@ -14,7 +14,7 @@ const PostDetail = (props) => {
     }
 
     const getPostData = () =>{
-        PostApi.getPost({postUrl})
+        PostApi.getPost(postUrl)
             .then(response => {
                 setPost(response.data)
             }, () => {
@@ -33,9 +33,12 @@ const PostDetail = (props) => {
             <div>
                 <h3> Post: {post.title} </h3>
             </div>
+            <p>
+                { post.body }
+            </p>
             <div>
                 <h4> Comments posted</h4>
-                <PostCommentList />
+                <PostCommentList post={post} />
             </div>
         </>
     )
