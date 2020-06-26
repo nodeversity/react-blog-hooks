@@ -9,7 +9,7 @@ const PostCommentList = ({ postUrl }) => {
         CommentApi.getCommentsForPost(postUrl)
             .then(response => {
                 setComments(response.data);
-                console.log(`Comments for Post: ${comments}`)
+                console.log(`Comments for Post: ${comments.length}`)
             })
             .catch(err => console.log(`Comments API Error: ${err}`))
             .finally(() => {})

@@ -7,11 +7,6 @@ import PostApi from '../api/PostApi';
 const Home = () => {
     const [categories, setCategories] = useState([]);
     const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        getBlogCategories();
-        getBlogPosts();
-    }, [])
     
     const getBlogCategories = () => {
         /** Get list of Blog Categories; simulated */
@@ -45,7 +40,10 @@ const Home = () => {
             .finally(() => {})
     }
     
-    
+    useEffect(() => {
+        getBlogCategories();
+        getBlogPosts();
+    }, [])
 
     return(
         <div>

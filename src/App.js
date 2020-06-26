@@ -7,7 +7,6 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 
 //Import components to configure app's routing
-import CategoryDetail from './components/blog/CategoryDetail'
 import PostDetail from './components/blog/PostDetail'
 
 function App() {

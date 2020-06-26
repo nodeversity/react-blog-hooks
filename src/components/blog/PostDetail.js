@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PostCommentList from './PostCommentList';
 import PostApi from '../../api/PostApi'
-import CommentApi from '../../api/CommentApi'
-
 
 const PostDetail = (props) => {
     const { postUrl } = useParams();
