@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 //import CategoryDetail from './blog/CategoryDetail';
-
+import {Link} from 'react-router-dom';
 import PostApi from '../api/PostApi';
 
 
@@ -69,7 +69,9 @@ const Home = () => {
                 {posts.map(post => {
                     return (
                         <p key={post.id}>
-                            {post.title}
+                            <Link to={`/${post.id}`}>
+                               { post.title }
+                            </Link>
                         </p>
                     )
                 })}

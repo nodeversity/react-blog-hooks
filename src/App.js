@@ -17,9 +17,8 @@ function App() {
       <header className="App-header">
         <Header />
       </header>
-      <Route path="/" component={Home} />
-      <Route path="/:categoryUrl" exact component={CategoryDetail} />
-      <Route path="/:categoryUrl/:postUrl" component={PostDetail} />
+      <Route exact path="/" component={Home} />
+      <Route path="/:postUrl" component={PostDetail} />
       <Footer />
     </div>
     </Router>
