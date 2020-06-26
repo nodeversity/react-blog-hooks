@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import CommentDetail from './/CommentDetail'
+import CommentDetail from './/CommentDetail';
+import CommentApi from '../../api/CommentApi';
 
 const PostCommentList = ({ postUrl }) => {
-    const [comments, setComments] = useState([]);
-
     const [comments, setComments] = useState([]);
 
     const getCommentsForPost = () => {

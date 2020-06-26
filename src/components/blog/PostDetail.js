@@ -38,7 +38,7 @@ const PostDetail = (props) => {
                 { post.body }
             </p>
             <div>
-    <h4> Comments posted: {comments.length} </h4>
+    <h4> Comments posted: </h4>
                 <PostCommentList post={post} postUrl={postUrl} />
             </div>
         </>
