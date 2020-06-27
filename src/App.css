@@ -38,3 +38,11 @@
     transform: rotate(360deg);
   }
 }
+
+.post {
+
+}
+
+.comment {
+  background-color: #f5fadc;
+}

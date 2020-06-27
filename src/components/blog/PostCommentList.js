@@ -22,7 +22,6 @@ const PostCommentList = ({ postUrl }) => {
 
     return (
         <div>
-            List of comments referencing this blog post.
             {comments.map(comment => (
                 <CommentDetail key={comment.id} comment={comment} />
             ))}

@@ -2,9 +2,9 @@ import React from 'react';
 
 const CommentDetail = ({ comment }) => {
     return(
-        <div>
-            <h5>
-                <i> {comment.email} says: </i>
+        <div className="comment">
+            <h5 style={{  left: '0px' }}>
+                <i> {comment.email} </i>says: 
             </h5>
             <h3> {comment.name}</h3>
             <p>
