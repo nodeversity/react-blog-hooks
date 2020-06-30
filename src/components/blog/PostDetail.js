@@ -29,15 +29,16 @@ const PostDetail = (props) => {
 
     return(
         <>
-            <div>
-                <h3> Post: {post.title} </h3>
-            </div>
-            <p>
-                { post.body }
-            </p>
-            <div>
-    <h4> Comments posted: </h4>
-                <PostCommentList post={post} postUrl={postUrl} />
+            <div className="post">
+                    <h3 style={{ textAlign: 'center' }}> {post.title} </h3>
+                
+                <p>
+                    { post.body }
+                </p>
+            
+            <h4> Comments posted: </h4>
+                    <PostCommentList post={post} postUrl={postUrl} />
+            
             </div>
         </>
     )
