@@ -47,22 +47,11 @@ const Home = () => {
 
     return(
         <div>
-            Home component.
-            <p>
-                List of Blog Categories.
-            </p>
-            <ul>
-                {categories.map(category => {
-                    return(
-                        <li key={category.id}>
-                            {category.name}
-                        </li>
-                    )
-                })}
-            </ul>
-            <p>
-                Number of posts: { posts.length }
-            </p>
+            <h3 style={{ textAlign: 'center' }}> 
+                Latest Blog Posts
+            </h3>
+
+            
             <div>
                 {posts.map(post => {
                     return (
